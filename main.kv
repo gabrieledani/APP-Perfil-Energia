@@ -1,0 +1,16 @@
+#: include kv/homepage.kv
+#: include kv/abrir.kv
+#: import utils kivy.utils
+
+FloatLayout:
+    ScreenManager:
+        pos_hint: {"right":1 , "top": 1}
+        size_hint: 1, 1
+        id: screen_manager
+        HomePage:
+            name: "homepage"
+            id: homepage
+
+        Site:
+            name: "abrirsite"
+            id: abrirsite
